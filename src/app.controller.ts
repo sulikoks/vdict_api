@@ -11,4 +11,8 @@ export class AppController {
   checkHealth() {
     return { successfully: true };
   }
+  @Get('healthz/hz')
+  checkHealth1() {
+    return { successfully: false, ok: 'odnoklasniki'};
+  }
 }
